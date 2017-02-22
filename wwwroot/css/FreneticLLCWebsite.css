@@ -1,0 +1,53 @@
+/* Frenetic LLC Website general stylesheet */
+html {
+    background-color: #CCDDCC;
+}
+a:link {
+    color: #FF9900;
+}
+a:visited {
+    color: #FF5500;
+}
+a:hover {
+    color: #AA3300;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    height: 125px;
+    border-bottom: 1px solid #FF1100;
+    left: 0px;
+}
+.header_text {
+    font-size: 75px;
+    position: absolute;
+    margin-top: 10px;
+}
+.sidebar {
+    margin-top: 125px;
+    width: 275px;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    border-right: 1px solid #FF1100;
+    margin-left: 0px;
+    left: 0px;
+}
+img.sidebar_img {
+    height: 120px;
+}
+.sidebar_text {
+    font-size: 42px;
+    position: absolute;
+    margin-top: 30px;
+}
+.sidebar_portion {
+    border-bottom: 1px solid #FF1100;
+    margin-left: 0px;
+}
+.mainbody {
+    margin-top: 125px;
+    position: fixed;
+    margin-left: 285px;
+}

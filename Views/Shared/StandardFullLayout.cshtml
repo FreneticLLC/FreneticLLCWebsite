@@ -3,8 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewData["Title"] | Frenetic LLC</title>
+    <link rel="stylesheet" href="/css/FreneticLLCWebsite.min.css?vary=1" />
 </head>
 <body>
-    @RenderBody()
+    <div class="header">
+        <a href="/"><img src="/images/header/freneticllc.png" height="100px" /><span class="header_text">&nbsp;Frenetic LLC</span></a>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar_portion">Helpful Links:</div>
+        <div class="sidebar_portion"><a href="/Home/About"><img class="sidebar_img" src="/images/header/freneticllc.png" /><span class="sidebar_text">About</span></a></div>
+        <div class="sidebar_portion"><a href="https://github.com/FreneticLLC"><img class="sidebar_img" src="/images/header/github.png" /><span class="sidebar_text">Github</span></a></div>
+        <div class="sidebar_portion"><a href="https://discord.gg/NezPEmd"><img class="sidebar_img" src="/images/header/discord.png" /><span class="sidebar_text">Discord</span></a></div>
+        <div class="sidebar_portion"><a href="https://twitter.com/FreneticLLC"><img class="sidebar_img" src="/images/header/twitter.png" /><span class="sidebar_text">Twitter</span></a></div>
+    </div>
+    <div class="mainbody">
+        @RenderBody()
+    </div>
 </body>
 </html>

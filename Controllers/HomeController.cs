@@ -22,5 +22,10 @@ namespace FreneticForum.Controllers
         {
             return View();
         }
+
+        public IActionResult About()
+        {
+            return View();
+        }
     }
 }
