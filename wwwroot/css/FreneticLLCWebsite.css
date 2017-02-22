@@ -1,6 +1,7 @@
 /* Frenetic LLC Website general stylesheet */
 html {
     background-color: #CCDDCC;
+    overflow: auto;
 }
 a:link {
     color: #FF9900;
@@ -18,6 +19,7 @@ a:hover {
     height: 125px;
     border-bottom: 1px solid #FF1100;
     left: 0px;
+    min-width: 800px;
 }
 .header_text {
     font-size: 75px;
@@ -50,4 +52,8 @@ img.sidebar_img {
     margin-top: 125px;
     position: fixed;
     margin-left: 285px;
+    min-width: 800px;
+}
+.fixitdo {
+    position: relative;
 }
