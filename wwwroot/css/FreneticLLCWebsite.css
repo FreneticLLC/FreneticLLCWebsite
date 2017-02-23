@@ -59,3 +59,15 @@ img.sidebar_img {
 .fixitdo {
     position: relative;
 }
+table {
+    border: 1px solid #000000;
+}
+table tr {
+    border: 1px solid #000000;
+}
+table tr th {
+    border: 1px solid #000000;
+}
+table tr td {
+    border: 1px solid #000000;
+}

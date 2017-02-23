@@ -27,5 +27,10 @@ namespace FreneticForum.Controllers
         {
             return View();
         }
+
+        public IActionResult BusinessLog()
+        {
+            return View();
+        }
     }
 }
