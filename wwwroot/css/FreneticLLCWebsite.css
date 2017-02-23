@@ -13,7 +13,7 @@ a:hover {
     color: #AA3300;
 }
 .header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     overflow: hidden;
     height: 125px;
@@ -30,11 +30,13 @@ a:hover {
     margin-top: 125px;
     width: 275px;
     height: 100%;
+    height: calc(100% - 140px);
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     border-right: 1px solid #FF1100;
     margin-left: 0px;
     left: 0px;
+    min-height: 700px;
 }
 img.sidebar_img {
     height: 120px;
@@ -50,7 +52,7 @@ img.sidebar_img {
 }
 .mainbody {
     margin-top: 125px;
-    position: fixed;
+    position: absolute;
     margin-left: 285px;
     min-width: 800px;
 }
