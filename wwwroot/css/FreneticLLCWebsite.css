@@ -13,7 +13,11 @@ a:hover {
     color: #AA3300;
 }
 .header {
-    position: absolute;
+    margin-top: 0px;
+    top: 0px;
+    background-color: #CCDDCC;
+    background-image: url("/images/backdrops/green_tiles.png");
+    position: fixed;
     width: 100%;
     overflow: hidden;
     height: 125px;
@@ -21,43 +25,17 @@ a:hover {
     left: 0px;
     min-width: 800px;
 }
-.header_text {
-    font-size: 75px;
-    position: absolute;
-    margin-top: 10px;
-}
-.sidebar {
-    margin-top: 125px;
-    width: 275px;
-    height: 100%;
-    height: calc(100% - 140px);
-    overflow: hidden;
-    position: absolute;
-    border-right: 1px solid #FF1100;
-    margin-left: 0px;
-    left: 0px;
-    min-height: 700px;
-}
-img.sidebar_img {
-    height: 120px;
-}
-.sidebar_text {
-    font-size: 42px;
-    position: absolute;
-    margin-top: 30px;
-}
-.sidebar_portion {
-    border-bottom: 1px solid #FF1100;
-    margin-left: 0px;
+.block {
+    position: relative;
+    display: inline-block;
 }
 .mainbody {
     margin-top: 125px;
     position: absolute;
-    margin-left: 285px;
     min-width: 800px;
 }
-.fixitdo {
-    position: relative;
+.bottombar_img {
+    height: 25px;
 }
 table {
     border: 1px solid #000000;
