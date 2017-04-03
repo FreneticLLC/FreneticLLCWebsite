@@ -13,7 +13,7 @@ var webroot = "./wwwroot/";
 var paths = {
     js: webroot + "js/**/*.js",
     minJs: webroot + "js/**/*.min.js",
-    pathJs: webroot + "js/",
+    pathJs: "",
     css: webroot + "css/**/*.css",
     minCss: webroot + "css/**/*.min.css",
     pathCss: webroot + "css/"

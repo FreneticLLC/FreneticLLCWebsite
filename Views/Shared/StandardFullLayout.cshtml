@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>@ViewData["Title"] | Frenetic LLC</title>
-    <link rel="stylesheet" href="/css/FreneticLLCWebsite.min.css?vary=1" />
-    <meta charset="UTF-8">
-    <meta name="description" content="Frenetic LLC official website." />
+	<title>@ViewData["Title"] | Frenetic LLC</title>
+	<script src="/js/jquery-2.1.4.min.js"></script>
+	<script src="/js/jquery.color-2.1.2.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/FreneticLLCStyle.min.css">
+	<meta charset="utf-8">
 </head>
 <body>
-    <!--
-    <div class="sidebar">
-        <div class="sidebar_portion">Helpful Links:</div>
-        <div class="sidebar_portion"><a href="/Home/About"><span class="sidebar_text">About Frenetic LLC</span></a></div>
-        <div class="sidebar_portion"><a href="https://github.com/FreneticLLC"><img class="sidebar_img" title="Github" alt="Github" src="/images/header/github.png" /><span class="sidebar_text">Github</span></a></div>
-        <div class="sidebar_portion"><a href="https://discord.gg/NezPEmd"><img class="sidebar_img" title="Discord" alt="Discord" src="/images/header/discord.png" /><span class="sidebar_text">Discord</span></a></div>
-        <div class="sidebar_portion"><a href="https://twitter.com/FreneticLLC"><img class="sidebar_img" title="Twitter" alt="Twitter" src="/images/header/twitter.png" /><span class="sidebar_text">Twitter</span></a></div>
-    </div>
-    -->
-    <div class="mainbody">
-        @RenderBody()
-        <hr>
-        Copyright (C) Frenetic LLC 2017, All Rights Reserved.
-        <br><a href="/"><img class="bottombar_img" title="Frenetic LLC" alt="Frenetic LLC" src="/images/header/freneticllc.png" /></a>
-        | <a href="https://github.com/FreneticLLC"><img class="bottombar_img" title="Github" alt="Github" src="/images/header/github.png" /></a>
-        | <a href="https://discord.gg/NezPEmd"><img class="bottombar_img" title="Discord" alt="Discord" src="/images/header/discord.png" /></a>
-        | <a href="https://twitter.com/FreneticLLC"><img class="bottombar_img" title="Twitter" alt="Twitter" src="/images/header/twitter.png" /></a>
-    </div>
-    <!-- Has to be last, for dumb reasons -->
-    <div class="header">
-        <div class="block"><a href="/"><img src="/images/header/freneticllc.png" height="100px" /><br>Frenetic LLC</a></div>
-        <div class="block">| <a href="https://github.com/FreneticLLC"><img class="bottombar_img" title="Github" alt="Github" src="/images/header/github.png" /></a></div>
-        <div class="block">| <a href="https://discord.gg/NezPEmd"><img class="bottombar_img" title="Discord" alt="Discord" src="/images/header/discord.png" /></a></div>
-        <div class="block">| <a href="https://twitter.com/FreneticLLC"><img class="bottombar_img" title="Twitter" alt="Twitter" src="/images/header/twitter.png" /></a></div>
-    </div>
+<header style="opacity:1">
+	<h2 style="margin-right:auto; margin-left:64px;">Frenetic LLC</h2>
+	<a class='navbutton' href="index.html">About Us</a>
+	<a class='navbutton'>Contact Us</a>
+	<a class='navbutton'>Monkey's pregnancy</a>
+	<a class='navbutton'>Privacy policy</a>
+</header>
+<section class="section-main whitebg" id="section2">
+<div class="contentwrapper">
+
+@RenderBody()
+
+</div>	
+</section>
+<footer class="section-main blackground">
+	<div class="contentwrapper-2c">
+		<div class="twocolumn">
+			<h2>Here's a random news post</h2>
+			<p>I’m the best thing that ever happened to placeholder text. I have a 10 year old son. He has words. He is so good with these words it's unbelievable.</p>
+			<a class="largelink">Read more...</a>
+		</div>
+		<div class="twocolumn flexcenter">
+			<a class="shybutton" href="#top">Back to top</a>
+			<a class="shybutton" href="">Contact Us</a>
+			<a class="shybutton" href="#top">Privacy policy</a>
+			<a class="shybutton" href="#top">Paper airplanes</a>
+		</div>
+	</div>
+	<div class="contentwrapper">
+		<p class="smalltext" style="text-align:center;">Copyright &copy; 2017 Frenetic LLC | Site designed by Stefan Blandin</p>
+	</div>
+</footer>
 </body>
+<script type="text/javascript" src="App.js"></script>
+<script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script> 
 </html>

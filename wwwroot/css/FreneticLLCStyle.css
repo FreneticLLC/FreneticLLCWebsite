@@ -1,0 +1,238 @@
+/* Frenetic LLC Website general stylesheet */
+body {
+  margin: 0px; }
+
+h1 {
+  color: #1c201b;
+  font-weight: 300;
+  font-size: 64px; }
+
+h2 {
+  color: #1c201b;
+  font-weight: 300;
+  font-size: 40px; }
+
+p {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  color: #84f555;
+  font-weight: 300; }
+
+.main, body {
+  font-family: 'roboto', sans-serif;
+  color: #1c201b; }
+
+.landingpage {
+  background-color: #c8744b;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
+.lp-mainbox {
+  padding: 32px;
+  background-color: white;
+  display: inline-block;
+  box-shadow: 0px 7px 4px rgba(28, 32, 27, 0.1);
+  margin: auto; }
+
+.lp-mainbox h1 {
+  color: #c8744b;
+  margin: 0px;
+  font-weight: 300;
+  font-size: 128px; }
+
+.lp-socialbox {
+  padding: 32px;
+  background-color: white;
+  display: inline-block;
+  box-shadow: 0px 7px 4px rgba(28, 32, 27, 0.1);
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%; }
+
+.c-icon {
+  width: 36px;
+  height: 36px;
+  fill: #84f555;
+  transition: .2s;
+  background-size: cover;
+  margin: 0px 16px;
+  opacity: .8; }
+
+.c-icon:hover {
+  transition: .2s;
+  opacity: 1; }
+
+.c-link {
+  position: relative;
+  color: #bbb; }
+
+.c-link:not(:last-of-type) {
+  margin-right: 15px; }
+
+.c-tooltip::before,
+.c-tooltip::after {
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: -42px;
+  transform: translate(-25%, -70px);
+  opacity: 0;
+  transition: .2s;
+  background-color: #84f555; }
+
+.c-tooltip::before {
+  content: '';
+  border: solid 5px rgba(255, 255, 255, 0);
+  border-top: 5px solid #84f555;
+  background-color: transparent;
+  left: 31px;
+  top: -8px; }
+
+.c-tooltip::after {
+  content: attr(aria-label);
+  padding: .61em .93em;
+  font-size: .875rem;
+  color: white;
+  border-radius: 3px; }
+
+.c-tooltip:hover::before,
+.c-tooltip:hover::after {
+  opacity: 1;
+  transform: translate(-25%); }
+
+.section-main {
+  padding: 100px; }
+
+.whitebg {
+  background-color: white; }
+
+.contentwrapper, .contentwrapper-2c, .contentwrapper-3c {
+  max-width: 1280px;
+  margin: auto; }
+
+.contentwrapper-2c {
+  display: flex; }
+
+.contentwrapper-3c {
+  display: flex; }
+
+.paralaxbg {
+  text-shadow: 0px 0px 3px black; }
+
+.paralaxbg h2 {
+  color: white; }
+
+.paralaxbg p {
+  color: white; }
+
+.paralaxbg h1 {
+  color: white; }
+
+.twocolumn {
+  width: 576px;
+  margin: 32px; }
+
+.threecolumn {
+  width: 362px;
+  margin: 32px; }
+
+.largelink {
+  font-size: 32px;
+  text-decoration: underline; }
+
+.orangebg {
+  background-color: #c8744b; }
+
+.pseudorow {
+  display: flex;
+  justify-content: flex-start; }
+  .pseudorow p {
+    text-align: right; }
+  .pseudorow p:first-of-type {
+    margin-right: 0; }
+
+.threecolumn .pseudorow p {
+  font-size: 16px;
+  margin-right: 8px; }
+
+.twocolumn .pseudorow p {
+  margin-right: 16px; }
+
+.smalltext {
+  font-size: 16px; }
+
+.shybutton {
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #1c201b;
+  padding: 16px 96px;
+  margin: 16px auto;
+  transition: .2s;
+  border: 1px solid #1c201b;
+  width: 250px; }
+  .shybutton:hover {
+    background-color: rgba(77, 77, 77, 0.3); }
+
+.flexcenter {
+  display: flex;
+  flex-direction: column; }
+
+.blackground {
+  background: #1c201b; }
+
+.blackground h2 {
+  color: white; }
+
+.blackground p {
+  color: white; }
+
+.blackground h1 {
+  color: white; }
+
+.blackground .shybutton {
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 16px 96px;
+  margin: 16px auto;
+  transition: .2s;
+  border: 1px solid white;
+  width: 250px; }
+  .blackground .shybutton:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: 0px;
+  width: 100%;
+  transition: .2s;
+  opacity: 0;
+  background-color: #c8744b; }
+
+header h2 {
+  margin: 16px; }
+
+.navbutton {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #1c201b;
+  padding: 8px 40px;
+  margin: auto 0;
+  transition: .2s; }
+  .navbutton:hover {
+    background-color: rgba(77, 77, 77, 0.3); }
