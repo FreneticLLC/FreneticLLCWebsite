@@ -40,7 +40,7 @@ var scrollf=function(){
 	if (!m) 
 		{thisoffset=0
 			$('.paralaxbg').each(function(){thisoffset=$(this).offset()
-		}).css({"background-position-y":((s/2)-(thisoffset.top+400))+"px"})}
+		}).css({"background-position-y":((s/2)-(thisoffset.top))+"px"})}
 
 	if (s>=sectwooff)
 	{
