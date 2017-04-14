@@ -14,6 +14,7 @@ At current stage, FreneticLLCWebsite is Copyright (C) 2017 FreneticLLC, All Righ
 - Install NPM (Node Package Manager) and Node.js.
 - Install NPM package `gulp` and related (at a command line, `npm install gulp gulp-cli rimraf gulp-concat gulp-cssmin gulp-uglify gulp-rename`).
 - Might have to install `gulp-cli` globally (`npm install -g gulp gulp-cli`).
+- Run `dotnet restore`
 - Run `development.bat` or `start.bat`.
 - Connect to server address (or `localhost`) at port `8045`.
 - That's all, folks!
