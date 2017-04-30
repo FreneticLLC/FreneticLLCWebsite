@@ -22,7 +22,18 @@ namespace FreneticForum.Controllers
         {
             return View();
         }
+
         public IActionResult BusinessLog()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        
+        public IActionResult Policy()
         {
             return View();
         }
