@@ -33,11 +33,11 @@ function resizeDiv() {
 
 	$('.landingpage').css({height:vph+"px"});
 
-	sectwooff=$('#section2').offset().top;
+	sectwooff = $('#section2').offset().top;
 }
 
 var scrollf=function(){
-	var s=window.scrollY;
+	var s = window.scrollY;
 
 	// NOTE: Parallax is awkward.
 	/*
@@ -48,7 +48,7 @@ var scrollf=function(){
 	}
 	*/
 
-	if (s>=sectwooff)
+	if (s >= sectwooff)
 	{
 		$('header').css({opacity:1})
 	}
@@ -61,4 +61,4 @@ var scrollf=function(){
 window.addEventListener('scroll', scrollf, false);
 
 //$(document).ready(main)
-$(document).ready(resizeDiv)
+$(document).ready(resizeDiv);
