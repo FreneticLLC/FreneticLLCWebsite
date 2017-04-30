@@ -21,6 +21,7 @@ a {
   font-weight: 300; }
 
 .main, body {
+  font-size: 24px;
   font-family: 'roboto', sans-serif;
   color: #1c201b; }
 
