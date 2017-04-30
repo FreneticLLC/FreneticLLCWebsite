@@ -1,7 +1,9 @@
-var main=function(){
+/*var main=function()
+{
 
 }
-
+*/
+/*
 function detectmob() { 
  if( navigator.userAgent.match(/Android/i)
  || navigator.userAgent.match(/webOS/i)
@@ -16,10 +18,10 @@ function detectmob() {
  else {
     return false;
   }
-}
+}*/
 
 window.onresize = function(event) {
-resizeDiv();
+	resizeDiv();
 }
 
 
@@ -27,9 +29,9 @@ function resizeDiv() {
 	vpw = $(window).width();
 	vph = $(window).height();
 
-	m=detectmob()
+	//m=detectmob();
 
-	$('.landingpage').css({height:vph+"px"})
+	$('.landingpage').css({height:vph+"px"});
 
 	sectwooff=$('#section2').offset().top;
 }
@@ -37,10 +39,14 @@ function resizeDiv() {
 var scrollf=function(){
 	var s=window.scrollY;
 
-	if (!m) 
-		{thisoffset=0
-			$('.paralaxbg').each(function(){thisoffset=$(this).offset()
-		}).css({"background-position-y":((s/2)-(thisoffset.top))+"px"})}
+	// NOTE: Parallax is awkward.
+	/*
+	if (!m)
+	{
+		thisoffset=0
+		$('.paralaxbg').each(function(){thisoffset=$(this).offset()}).css({"background-position-y":((s/2)-(thisoffset.top))+"px"})
+	}
+	*/
 
 	if (s>=sectwooff)
 	{
@@ -54,5 +60,5 @@ var scrollf=function(){
 
 window.addEventListener('scroll', scrollf, false);
 
-$(document).ready(main)
+//$(document).ready(main)
 $(document).ready(resizeDiv)
