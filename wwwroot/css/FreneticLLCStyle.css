@@ -90,13 +90,16 @@ a {
   transition: .2s;
   background-color: #84f555; }
 
-.c-tooltip::before {
-  content: '';
-  border: solid 5px rgba(255, 255, 255, 0);
-  border-top: 5px solid #84f555;
-  background-color: transparent;
-  left: 31px;
-  top: -8px; }
+ .c-tooltip::before,
+.c-tooltip::after {
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: -42px;
+  transform: translate(-25%, -40px);
+  opacity: 0;
+  transition: .4s cubic-bezier(.98,0,.24,.55);
+  background-color: #84f555; }
 
 .c-tooltip::after {
   content: attr(aria-label);
