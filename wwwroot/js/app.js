@@ -25,17 +25,6 @@ window.onresize = function(event) {
 }
 
 
-function resizeDiv() {
-	vpw = $(window).width();
-	vph = $(window).height();
-
-	//m=detectmob();
-
-	$('.landingpage').css({height:vph+"px"});
-
-	sectwooff = $('#section2').offset().top;
-}
-
 var scrollf=function(){
 	var s = window.scrollY;
 
@@ -56,6 +45,19 @@ var scrollf=function(){
 	{
 		$('header').css({opacity:0})
 	}
+}
+
+function resizeDiv() {
+	vpw = $(window).width();
+	vph = $(window).height();
+
+	//m=detectmob();
+
+	$('.landingpage').css({height:vph+"px"});
+
+	sectwooff = $('#section2').offset().top;
+
+	scrollf();
 }
 
 window.addEventListener('scroll', scrollf, false);
