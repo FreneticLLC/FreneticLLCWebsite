@@ -24,29 +24,6 @@ window.onresize = function(event) {
 	resizeDiv();
 }
 
-
-var scrollf=function(){
-	var s = window.scrollY;
-
-	// NOTE: Parallax is awkward.
-	/*
-	if (!m)
-	{
-		thisoffset=0
-		$('.paralaxbg').each(function(){thisoffset=$(this).offset()}).css({"background-position-y":((s/2)-(thisoffset.top))+"px"})
-	}
-	*/
-
-	if (s >= sectwooff)
-	{
-		$('header').css({opacity:1})
-	}
-	else
-	{
-		$('header').css({opacity:0})
-	}
-}
-
 function resizeDiv() {
 	vpw = $(window).width();
 	vph = $(window).height();
@@ -56,11 +33,7 @@ function resizeDiv() {
 	$('.landingpage').css({height:vph+"px"});
 
 	sectwooff = $('#section2').offset().top;
-
-	scrollf();
 }
-
-window.addEventListener('scroll', scrollf, false);
 
 //$(document).ready(main)
 $(document).ready(resizeDiv);
