@@ -37,5 +37,10 @@ namespace FreneticForum.Controllers
         {
             return View();
         }
+        
+        public IActionResult SOPS()
+        {
+            return View();
+        }
     }
 }

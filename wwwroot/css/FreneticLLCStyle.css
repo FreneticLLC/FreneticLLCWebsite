@@ -234,7 +234,8 @@ a {
   transition: .2s;
   border: 1px solid white;
   width: 250px; }
-  .blackground .shybutton:hover {
+
+.blackground .shybutton:hover {
     background-color: rgba(255, 255, 255, 0.3); }
 
 header {
@@ -276,4 +277,10 @@ table tr {
 
 table tr td {
   border: 1px solid #1c201b;
+}
+
+.pre_wrapped {
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
