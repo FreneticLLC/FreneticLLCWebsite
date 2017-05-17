@@ -2,10 +2,12 @@
 <html>
 <head>
 	@{
-		Object PageDescription = ViewData["Description"];
+		string PageDescription = ViewData["Description"] + " | Frenetic LLC is a California-registered Limited Liability Company that develops games and software.";
 	}
 	<title>@ViewData["Title"] | Frenetic LLC</title>
-	<meta name="description" content="@PageDescription | Frenetic LLC is a California-registered Limited Liability Company that develops games and software.">
+	<meta name="description" content="@PageDescription">
+	<meta name="og:description" content="@PageDescription">
+	<meta name="twitter:description" content="@PageDescription">
 	<script src="/js/jquery-2.1.4.min.js"></script>
 	<script src="/js/jquery.color-2.1.2.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500" rel="stylesheet">
