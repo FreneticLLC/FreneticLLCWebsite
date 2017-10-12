@@ -1,0 +1,40 @@
+
+<footer class="section-main blackground">
+	<div class="contentwrapper-2c">
+		<div class="twocolumn">
+			<h2>Frenetic LLC is a California registered Limited Liability Company that makes games and software.</h2>
+			<p>If you have any questions or issues, please contact us using the button on the right.
+				We're ready and willing to help!
+			</p>
+		</div>
+		<div class="twocolumn flexcenter">
+			<a class="shybutton" href="#top">Back To Top</a>
+			<a class="shybutton" href="/Home/Contact">Contact Us</a>
+			<a class="shybutton" href="/Home/Policy">Privacy Policy</a>
+			<a class="shybutton" href="/">Main Page</a>
+		</div>
+	</div>
+	<div class="contentwrapper">
+		<p class="smalltext" style="text-align:center;">Copyright &copy; 2017 Frenetic LLC | Original site template designed by Stefan Blandin</p>
+	</div>
+</footer>
+<script type="text/javascript" src="/js/app.min.js"></script>
+<script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+					window.history.pushState("", "Frenetic LLC", this.hash);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>

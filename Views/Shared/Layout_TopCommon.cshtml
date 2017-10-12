@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	@{
+		string PageDescription = ViewData["Description"] + " | Frenetic LLC is a California-registered Limited Liability Company that develops games and software.";
+	}
+	<title>@ViewData["Title"] | Frenetic LLC</title>
+	<meta name="description" content="@PageDescription">
+	<meta name="og:description" content="@PageDescription">
+	<meta name="twitter:description" content="@PageDescription">
+	<meta name="image" content="https://freneticllc.com/images/header/freneticllc.png">
+	<meta name="og:image" content="https://freneticllc.com/images/header/freneticllc.png">
+	<meta name="twitter:image" content="https://freneticllc.com/images/header/freneticllc.png">
+	<script src="/js/jquery-2.1.4.min.js"></script>
+	<script src="/js/jquery.color-2.1.2.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/FreneticLLCStyle.min.css?vary=3">
+	<meta charset="utf-8">
+</head>
+<body>
+<header style="opacity:1;z-index: 100;">
+	<h2 style="margin-right:auto; margin-left:64px;"><a class="blacklink" href="/"><img src="/images/header/freneticllc.png" width="32" height="32" />Frenetic LLC</a></h2>
+	<a class='navbutton' href="/#about">About Us</a>
+	<a class='navbutton' href="/Home/Contact">Contact Us</a>
+	<a class='navbutton' href="/Home/BusinessLog">Business Log</a>
+	<a class='navbutton' href="/Home/Policy">Privacy Policy</a>
+</header>

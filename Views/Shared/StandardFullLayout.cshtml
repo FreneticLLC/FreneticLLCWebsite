@@ -1,69 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	@{
-		string PageDescription = ViewData["Description"] + " | Frenetic LLC is a California-registered Limited Liability Company that develops games and software.";
-	}
-	<title>@ViewData["Title"] | Frenetic LLC</title>
-	<meta name="description" content="@PageDescription">
-	<meta name="og:description" content="@PageDescription">
-	<meta name="twitter:description" content="@PageDescription">
-	<meta name="image" content="https://freneticllc.com/images/header/freneticllc.png">
-	<meta name="og:image" content="https://freneticllc.com/images/header/freneticllc.png">
-	<meta name="twitter:image" content="https://freneticllc.com/images/header/freneticllc.png">
-	<script src="/js/jquery-2.1.4.min.js"></script>
-	<script src="/js/jquery.color-2.1.2.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/css/FreneticLLCStyle.min.css?vary=3">
-	<meta charset="utf-8">
-</head>
-<body>
-<header style="opacity:1;z-index: 100;">
-	<h2 style="margin-right:auto; margin-left:64px;"><a class="blacklink" href="/"><img src="/images/header/freneticllc.png" width="32" height="32" />Frenetic LLC</a></h2>
-	<a class='navbutton' href="/#about">About Us</a>
-	<a class='navbutton' href="/Home/Contact">Contact Us</a>
-	<a class='navbutton' href="/Home/BusinessLog">Business Log</a>
-	<a class='navbutton' href="/Home/Policy">Privacy Policy</a>
-</header>
-
+@Html.Partial("Layout_TopCommon.cshtml")
+<section class="section-main whitebg" id="section2">
+<div class="contentwrapper" style="margin:160px 0px;">
 @RenderBody()
-
-<footer class="section-main blackground">
-	<div class="contentwrapper-2c">
-		<div class="twocolumn">
-			<h2>Frenetic LLC is a California registered Limited Liability Company that makes games and software.</h2>
-			<p>If you have any questions or issues, please contact us using the button on the right.
-				We're ready and willing to help!
-			</p>
-		</div>
-		<div class="twocolumn flexcenter">
-			<a class="shybutton" href="#top">Back To Top</a>
-			<a class="shybutton" href="/Home/Contact">Contact Us</a>
-			<a class="shybutton" href="/Home/Policy">Privacy Policy</a>
-			<a class="shybutton" href="/">Main Page</a>
-		</div>
-	</div>
-	<div class="contentwrapper">
-		<p class="smalltext" style="text-align:center;">Copyright &copy; 2017 Frenetic LLC | Original site template designed by Stefan Blandin</p>
-	</div>
-</footer>
-<script type="text/javascript" src="/js/app.min.js"></script>
-<script>
-  $(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-					window.history.pushState("", "Frenetic LLC", this.hash);
-          return false;
-        }
-      }
-    });
-  });
-</script>
-</body>
-</html>
+</div>
+</section>
+@Html.Partial("Layout_BottomCommon.cshtml")
