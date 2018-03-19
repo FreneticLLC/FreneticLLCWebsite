@@ -1,3 +1,5 @@
-@{ Html.RenderPartial("Layout_TopCommon"); }
-@RenderBody()
-@{ Html.RenderPartial("Layout_BottomCommon"); }
+@{
+    Html.RenderPartial("Layout_TopCommon");
+    RenderBody();
+    Html.RenderPartial("Layout_BottomCommon");
+}
