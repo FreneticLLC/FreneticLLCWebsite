@@ -1,3 +1,3 @@
-@RenderPage("Layout_TopCommon.cshtml")
+@{ Html.RenderPartial("Layout_TopCommon"); }
 @RenderBody()
-@RenderPage("Layout_BottomCommon.cshtml")
+@{ Html.RenderPartial("Layout_BottomCommon"); }
