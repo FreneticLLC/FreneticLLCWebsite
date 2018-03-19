@@ -1,7 +1,7 @@
-@{ Html.RenderPartial("Layout_TopCommon"); }
+@RenderPage("Layout_TopCommon.cshtml")
 <section class="section-main whitebg" id="section2">
 <div class="contentwrapper" style="margin:160px 0px;">
 @RenderBody()
 </div>
 </section>
-@{ Html.RenderPartial("Layout_BottomCommon"); }
+@RenderPage("Layout_BottomCommon.cshtml")
