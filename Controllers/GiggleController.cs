@@ -12,5 +12,10 @@ namespace FreneticLLCWebsite.Controllers
         {
             return View();
         }
+
+        public IActionResult Expo()
+        {
+            return View();
+        }
     }
 }
