@@ -1,7 +1,6 @@
-@{
-    <!DOCTYPE html>
-    <html>
-    Html.RenderPartial("Layout_TopCommon");
+<!DOCTYPE html>
+<html>
+    @{ Html.RenderPartial("Layout_TopCommon"); }
     <body>
     <header style="opacity:1;z-index: 100;">
         <h2 style="margin-right:auto; margin-left:64px;"><a class="blacklink" href="/"><img src="/images/header/freneticllc.png" width="32" height="32" />Frenetic LLC</a></h2>
@@ -10,8 +9,7 @@
         <a class='navbutton' href="/Home/BusinessLog">Business Log</a>
         <a class='navbutton' href="/Home/Policy">Privacy Policy</a>
     </header>
-    RenderBody();
-    Html.RenderPartial("Layout_BottomCommon");
+    @RenderBody();
+    @{ Html.RenderPartial("Layout_BottomCommon"); }
     </body>
-    </html>
-}
+</html>
