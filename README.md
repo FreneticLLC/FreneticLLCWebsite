@@ -1,4 +1,5 @@
-# FreneticLLCWebsite
+FreneticLLCWebsite
+------------------
 
 Welcome to the Frenetic LLC Website source code, built in ASP.NET Core MVC!
 
@@ -6,7 +7,7 @@ If you're seeing this, you're probably horrendously lost.
 
 ### Notice
 
-At current stage, FreneticLLCWebsite is Copyright (C) 2017 FreneticLLC, All Rights Reserved.
+FreneticLLCWebsite is Copyright (C) 2017-2019 FreneticLLC, All Rights Reserved.
 
 ### Setup
 
