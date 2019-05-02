@@ -11,7 +11,7 @@ FreneticLLCWebsite is Copyright (C) 2017-2019 FreneticLLC, All Rights Reserved.
 
 ### Setup
 
-- Install .NET Core CLI SDK version 2.x or higher! That's available at: https://github.com/dotnet/cli
+- Install .NET Core CLI SDK version 3.x or higher! That's available at: https://github.com/dotnet/cli
 - On Windows, run `development.bat` or `start.bat`. On Linux, run `launch.sh`.
 - Connect to server address (or `localhost`) at port `8045`.
 - That's all, folks!
