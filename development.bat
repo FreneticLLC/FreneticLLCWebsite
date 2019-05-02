@@ -1,4 +1,3 @@
-call gulp clean min
 set ASPNETCORE_ENVIRONMENT=Development
-SET ASPNETCORE_URLS=https://*:8045
+SET ASPNETCORE_URLS=http://*:8045
 dotnet run
