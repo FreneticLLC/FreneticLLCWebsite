@@ -10,7 +10,7 @@ namespace FreneticLLCWebsite.Controllers
     {
         public IActionResult Discord()
         {
-            return Redirect("https://discord.gg/NezPEmd");
+            return Redirect("https://discord.gg/eggWVJt");
         }
     }
 }
