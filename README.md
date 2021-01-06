@@ -7,7 +7,7 @@ If you're seeing this, you're probably horrendously lost.
 
 ### Notice
 
-FreneticLLCWebsite is Copyright (C) 2017-2020 FreneticLLC, All Rights Reserved.
+FreneticLLCWebsite is Copyright (C) 2017-2021 FreneticLLC, All Rights Reserved.
 
 ### Setup
 
